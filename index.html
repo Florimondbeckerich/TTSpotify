@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <h2>LECTURE À PARTIR DE PLAYLIST</h2>
+                <p>Florimond</p>
+            </div>
+            <div class="header-right">
+                <p id="clock">00:00</p>
+            </div>
+        </div>
+        <div class="album-cover">
+            <img id="album-cover-img" src="Photo/hq720.jpg" alt="Album Cover">
+        </div>
+        <div class="song-info">
+            <h1 id="song-title">Team TOMODACHI</h1>
+            <p id="song-artist">200, Raoul, SIVAA, YOSI's</p>
+        </div>
+        <div class="player-controls">
+            <button id="prev" class="control" onclick="previousSong()">&#9664;</button>
+            <button id="play" class="control" onclick="togglePlayPause()">&#9654;</button>
+            <button id="next" class="control" onclick="nextSong()">&#9654;</button>
+        </div>
+        <div class="progress-bar">
+            <span id="current-time">0:00</span>
+            <input type="range" id="progress" value="0" max="100">
+            <span id="total-time"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
